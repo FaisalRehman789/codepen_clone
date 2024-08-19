@@ -216,7 +216,7 @@ const ProjectDetail = () => {
           </div>
 
           {/* User section */}
-          {user && (
+          {user && project && user.uid === project.user.uid ? (
             <div className="flex items-center justify-center gap-4">
               <motion.button
                 onClick={updateFirestore}
@@ -227,6 +227,10 @@ const ProjectDetail = () => {
               </motion.button>
               <UserProfileDetails />
             </div>
+          ) : (
+            <>
+              <UserProfileDetails />
+            </>
           )}
         </header>
 
