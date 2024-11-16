@@ -123,7 +123,7 @@ const NewProjects = () => {
                         className="cursor-pointer"
                         onClick={() => setIsTitle(false)}
                       >
-                        <MdCheck className="text-2xl text-emerald-500" />
+                        <MdCheck className="text-2xl text-blue-500" />
                       </motion.div>
                     </>
                   ) : (
@@ -150,7 +150,7 @@ const NewProjects = () => {
                 </p>
                 <motion.p
                   whileTap={{ scale: 0.9 }}
-                  className="text-[10px] bg-emerald-500 rounded-sm px-2 py-[1px] text-primary font-semibold cursor-pointer"
+                  className="text-[10px] bg-blue-500 rounded-sm px-2 py-[1px] text-primary font-semibold cursor-pointer"
                 >
                   + Follow
                 </motion.p>

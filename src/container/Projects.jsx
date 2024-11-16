@@ -104,7 +104,7 @@ const ProjectCard = ({ project, index }) => {
         />
       </div>
       <div className="flex items-center justify-start gap-3 w-full">
-        <div className="w-14 h-14 flex items-center justify-center rounded-xl overflow-hidden bg-emerald-500">
+        <div className="w-14 h-14 flex items-center justify-center rounded-xl overflow-hidden bg-blue-500">
           {project?.user?.photoURL ? (
             <motion.img
               whileHover={{ scale: 1.2 }}

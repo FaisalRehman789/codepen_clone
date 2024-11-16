@@ -13,7 +13,7 @@ import {
   signInWithEmailAndPassword,
 } from "firebase/auth";
 import { auth } from "../config/firebase.config";
-import { fadeInOut } from "../animations/indes";
+import { fadeInOut } from "../animations/index";
 
 const SignUp = () => {
   const [email, setEmail] = useState("");
@@ -70,7 +70,7 @@ const SignUp = () => {
       />
 
       <div className="w-full flex flex-col items-center justify-center py-8">
-        <p className="py-12 text-2xl text-primaryText">Join with us!😊</p>
+        <p className="py-12 text-2xl text-primaryText">Join with us!</p>
 
         <div className="px-8 w-full md:w-auto py-4 rounded-xl bg-secondary shadow-md flex flex-col items-center justify-center gap-8">
           {/* email */}
@@ -112,7 +112,7 @@ const SignUp = () => {
             <motion.div
               onClick={createNewUser}
               whileTap={{ scale: 0.9 }}
-              className="flex items-center justify-center w-full py-3 rounded-xl hover:bg-emerald-400 cursor-pointer bg-emerald-500"
+              className="flex items-center justify-center w-full py-3 rounded-xl hover:bg-blue-400 cursor-pointer bg-blue-500"
             >
               <p className="text-xl text-white">Sign Up</p>
             </motion.div>
@@ -120,7 +120,7 @@ const SignUp = () => {
             <motion.div
               onClick={loginWithEmailAndPassword}
               whileTap={{ scale: 0.9 }}
-              className="flex items-center justify-center w-full py-3 rounded-xl hover:bg-emerald-400 cursor-pointer bg-emerald-500"
+              className="flex items-center justify-center w-full py-3 rounded-xl hover:bg-blue-400 cursor-pointer bg-blue-500"
             >
               <p className="text-xl text-white">Login In</p>
             </motion.div>
@@ -132,7 +132,7 @@ const SignUp = () => {
               Already Have an account !{" "}
               <span
                 onClick={() => setIsLogin(!isLogin)}
-                className="text-emerald-500 cursor-pointer"
+                className="text-blue-500 cursor-pointer"
               >
                 Login Here
               </span>
@@ -142,7 +142,7 @@ const SignUp = () => {
               Doesn't Have an account !{" "}
               <span
                 onClick={() => setIsLogin(!isLogin)}
-                className="text-emerald-500 cursor-pointer"
+                className="text-blue-500 cursor-pointer"
               >
                 Create Here
               </span>

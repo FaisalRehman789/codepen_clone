@@ -87,7 +87,7 @@ const Home = () => {
             >
               <Link
                 to={"/home/auth"}
-                className="bg-emerald-500 px-6 py-2 rounded-md text-white text-lg cursor-pointer hover:bg-emerald-700"
+                className="bg-blue-500 px-6 py-2 rounded-md text-white text-lg cursor-pointer hover:bg-blue-700"
               >
                 SignUp
               </Link>
