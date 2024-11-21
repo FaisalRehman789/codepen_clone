@@ -5,7 +5,7 @@ import { HiChevronDoubleLeft } from "react-icons/hi2";
 import { motion } from "framer-motion";
 import { Link, Route, Routes } from "react-router-dom";
 import { logo } from "../assets";
-import { MdCollections, MdHome } from "react-icons/md";
+import { MdHome } from "react-icons/md";
 import { FaSearchengin } from "react-icons/fa6";
 import { Projects, SignUp } from "../container";
 import { useDispatch, useSelector } from "react-redux";
