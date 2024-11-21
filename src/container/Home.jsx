@@ -1,7 +1,7 @@
 /** @format */
 
 import React, { useState } from "react";
-import { HiChevronDoubleLeft } from "react-icons/hi2";
+import { HiChevronDoubleLeft, HiChevronDoubleRight } from "react-icons/hi2";
 import { motion } from "framer-motion";
 import { Link, Route, Routes } from "react-router-dom";
 import { logo } from "../assets";
@@ -34,7 +34,11 @@ const Home = () => {
           onClick={() => setIsSideMenu(!isSideMenu)}
           className="w-8 h-8 bg-secondary rounded-tr-lg rounded-br-lg absolute -right-6 flex items-center justify-center cursor-pointer"
         >
-          <HiChevronDoubleLeft className="text-white text-xl" />
+          {!isSideMenu ? (
+            <HiChevronDoubleLeft className="text-white text-xl" />
+          ) : (
+            <HiChevronDoubleRight className="text-white text-xl" />
+          )}
         </motion.div>
 
         <div className="overflow-hidden w-full flex flex-col gap-4">
