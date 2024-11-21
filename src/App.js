@@ -29,11 +29,10 @@ const App = () => {
         setDoc(doc(db, "users", userCred?.uid), userCred?.providerData[0]).then(
           () => {
             dispatch(SET_USER(userCred?.providerData[0]));
+            navigate("/home/auth", { replace: false });
             navigate("/home/projects", { replace: true });
           }
         );
-      } else {
-        navigate("/home/auth", { replace: true });
       }
 
       setIsLoading(false);

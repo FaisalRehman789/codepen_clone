@@ -228,9 +228,7 @@ const ProjectDetail = () => {
               <UserProfileDetails />
             </div>
           ) : (
-            <>
-              <UserProfileDetails />
-            </>
+            <>""</>
           )}
         </header>
 
